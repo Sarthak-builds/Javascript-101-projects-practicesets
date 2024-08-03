@@ -5,6 +5,7 @@ let winbtn=document.querySelector("#winpara");
 // Will add eventlistener to write alternate X and O in the boxes 
 let turn ="playerx";
 let click=0;
+
 box.forEach(function(box) {
     box.addEventListener("click",function() {
         if (turn==="playerx"){
@@ -42,6 +43,7 @@ const resetAll=()=>{
     enableboxes();
     winbtn.classList.add("hide");
     }
+    resetbtn.addEventListener("click",resetAll);
 //show winner function
 showWinner=(winner)=>{
     winbtn.innerText=`WINNER IS ${winner}`;
@@ -64,14 +66,14 @@ for(pattern of winPatterns) {
         if(val1===val2 && val2===val3){
        showWinner(val1);
         }
-        else if(click==9){
+        else if(click>=9){
             winbtn.innerText=`NOBODY WON`;
             winbtn.classList.remove("hide");
         }
     }
 }
 }
-resetbtn.addEventListener("click",resetAll);
+
 
 
 

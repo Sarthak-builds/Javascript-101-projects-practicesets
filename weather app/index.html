@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="rain.png">
+</head>
+<body>
+    <header>
+        <h1> The Weather App</h1>
+    </header>
+    <main>
+        <section class="main">
+            <div class="card-container">
+                <div class="card">
+                    <div class="search">
+                        <input class="search-input" placeholder="Enter City" spellcheck="false" >
+                        <button class="search-btn">
+                         <img src="search.png">
+                        </button>
+                    </div>
+                    <div class="error">Invalid City Name</div>
+                    <div class="weather">
+                        <div class="status">
+                            <div class="weather-img">
+                            <img src="rain.png" class="imgstatus">
+                            </div>
+                         <div class="weather-status">
+                            <div class="temp">22°C</div></div>
+                        </div>
+                        <div class="city">Bengaluru</div>
+                        <div class="extra-info">
+                            <div class="humidity">
+                                <img src="hum.png"><div class="hum-data"><p class="hum">53</p><p>Humidity</p></div>
+                            </div>
+                            <div class="windspeed"><img src="w.png"><div class="wind-data"><p class="speed">5.66</p><p>Windspeed</p></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+  <script src="weather.js"></script>  
+</body>
+</html>
